@@ -1,0 +1,123 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{Visualização de Dados sobre Conhecimento em Neurofisiologia da Dor}
+\author{Luan Daniel Melo}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introdução}
+A dor crônica é um problema relevante de saúde pública, e estudos recentes apontam lacunas no conhecimento de graduandos e profissionais de fisioterapia sobre neurofisiologia da dor. Este trabalho tem como objetivo explorar os resultados de um estudo piloto realizado com estudantes de fisioterapia, utilizando questionários validados (QND e QVC) e diferentes estratégias de ensino (IA e aula assíncrona). A análise é apresentada por meio de visualizações de dados que permitem compreender padrões de participação, adesão e desempenho.
+
+\section{Descrição dos Dados}
+Os dados foram coletados em duas etapas (pré e pós-intervenção), com aplicação do QND (12 questões) e QVC (10 questões). A amostra foi composta por estudantes randomizados em dois grupos iguais: uso de ferramenta de IA e aula assíncrona. Mas um problema de coleta afetou a identificação completa dos participantes. As variáveis incluem:
+\begin{itemize}
+    \item Participação por grupo;
+    \item Respostas individuais por questão;
+    \item Pontuação média nos testes QND e QVC;
+    \item Nível de adesão (sem, parcial, total).
+\end{itemize}
+
+Além de outras variáveis que não foram incluidas na visualização devido limitações de tempo.
+
+O tratamento dos dados envolveu limpeza de inconsistências (ex.: respostas duplicadas ou sem identificação de grupo) e organização em planilhas estruturadas.
+
+\section{Justificativa das Visualizações}
+Cada visualização foi escolhida para destacar aspectos específicos:
+\begin{itemize}
+    \item \textbf{Sankey}: mostra o fluxo de participantes entre grupos e adesão, facilitando a percepção da distribuição.
+    \item \textbf{Radar}: evidencia padrões de acertos/erros por questão, permitindo identificar lacunas de conhecimento.
+    \item \textbf{Barras}: compara pontuações médias entre grupos e níveis de adesão, destacando diferenças de desempenho.
+\end{itemize}
+
+\section{Análise dos Gráficos}
+Os resultados das visualizações são apresentados a seguir, com uma breve descrição da escolha de cada gráfico seguida da interpretação dos achados observados nas imagens geradas.
+
+\subsection*{Sistribuição de participantes (Sankey)}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{img/sankey_simplificado.png}
+\caption{Fluxo e identificação dos participantes ao longo das etapas do estudo (Sankey simplificado).}
+\label{fig:sankey}
+\end{figure}
+
+O Sankey foi utilizado para mostrar o fluxo de participantes entre as fases do estudo, incluindo randomização nos grupos, identificação no segundo dia e níveis de adesão. Ele evidencia de forma clara perdas e blocos de participantes por etapa. Observa-se que, dos 38 participantes iniciais, houve um problema de coleta que reduziu a identificação para 23 indivíduos, deixando um bloco considerável de 15 "não identificados". Entre os identificados, a adesão aos materiais foi baixa: apenas uma pequena fração dos alocados ao assistente de IA e às videoaulas realmente utilizou o recurso. Essa dispersão e a predominância de não adesão indicam um viés potencial nas comparações entre grupos e reforçam a necessidade de medidas para aumentar o engajamento em estudos futuros.
+
+\subsection*{Distribuição de respostas - QND (Radar)}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{img/QND_distribuicao_respostas_radar.png}
+\caption{Distribuição das respostas do QND por questão e por grupo (gráfico de radar).}
+\label{fig:qnd_radar}
+\end{figure}
+
+O gráfico de radar permite comparar, questão a questão, a proximidade das respostas com as alternativas corretas para cada grupo. Observa-se que os grupos com adesão (IA e videoaulas) tendem a apresentar maior acerto em muitas questões, enquanto o grupo sem adesão mostra maior variabilidade e mais respostas "Não sei". Questões como Q01, Q03 e Q12 (com resposta correta "Verdade") apresentaram desempenho próximo do ideal nos grupos com adesão, enquanto várias questões com resposta "Falso" (por exemplo Q02, Q04, Q07, Q08, Q09 e Q10) também foram melhor respondidas por participantes aderentes. No entanto, há diferenças pontuais entre IA e videoaulas em algumas questões, sugerindo que cada método tem pontos fortes distintos.
+
+\subsection*{Distribuição de respostas - QVC (Radar)}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{img/QVC_distribuicao_respostas_radar.png}
+\caption{Distribuição das respostas do QVC por questão e por grupo (gráfico de radar).}
+\label{fig:qvc_radar}
+\end{figure}
+
+O radar do QVC reforça a tendência observada no QND: adesão ao material está associada a maior proximidade com as alternativas corretas em várias questões. Em itens como v01, v03, v04 e v06, os grupos aderentes alcançaram 100\% de acerto; já em v02 e v07 nota-se maior variabilidade — o grupo IA apresentou desempenho inferior em algumas dessas questões enquanto o grupo de videoaulas manteve maior consistência. Além disso, o grupo sem adesão mostrou dispersão maior e porcentagens relevantes de respostas incorretas em itens como v07 e v10, evidenciando lacunas que o material de estudo tende a reduzir.
+
+\subsection*{Pontuação média por nível de adesão (Barras)}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{img/adesao_pontuacao_media.png}
+\caption{Pontuação média por nível de adesão (média, desvio padrão e mediana).}
+\label{fig:adesao_barras}
+\end{figure}
+
+O gráfico de barras com barras de erro e marcadores de mediana apresenta uma visão mais completa do desempenho médio por nível de adesão. No QND, nota-se que a adesão total está associada à maior média e menor dispersão (por exemplo, média mais elevada para o grupo de videoaulas), indicando benefício da adesão para esse instrumento. No QVC, as diferenças entre níveis de adesão são menos claras — médias semelhantes entre grupos com e sem adesão mostram que, para esse teste, o efeito da adesão foi mais tênue ou inexistente, possivelmente indicando deficiência ou irrelevância no material dado aos participantes no que diz respeito a esse teste.
+
+\subsection*{Pontuação média por grupo (Barras)}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{img/grupo_pontuacao_media.png}
+\caption{Pontuação média por grupo de intervenção (IA vs Aulas) e nível de adesão.}
+\label{fig:grupo_barras}
+\end{figure}
+
+Ao comparar os grupos por modalidade de intervenção, observa-se que tanto o assistente de IA quanto as videoaulas podem contribuir para melhor desempenho, mas o efeito depende fortemente da adesão. No QND, o grupo de videoaulas mostrou a maior média e consistência; já no QVC as médias entre grupos foram bem próximas, sugerindo equivalência entre métodos para esse instrumento. Em resumo, as visualizações convergem para dois pontos principais: (1) a adesão ao material tende a melhorar desempenho em várias medidas, especialmente no QND; e (2) diferenças entre IA e videoaulas existem em itens isolados, mas ambas as abordagens podem ser eficazes quando há adesão.
+
+Essas observações devem ser interpretadas com cautela devido ao tamanho reduzido da amostra e à perda de identificação de participantes em uma etapa, o que limita generalização e pode introduzir viés nas comparações entre subgrupos.
+
+\section{Limitações e Possíveis Expansões}
+Sobre as visualizações e análises realizadas, identificados as seguintes pontos fortes:
+\begin{itemize}
+  \item \textbf{Sankey}: mostra bem perdas e adesão, mas não captura nuances dos motivos relatados (tempo, acesso, formato).
+  \item \textbf{Radar (QND/QVC)}: evidencia diferenças por questão, mas pode mascarar o impacto da baixa adesão, já que muitos não responderam.
+  \item \textbf{Barras (pontuação média)}: médias podem ser enviesadas pela pequena quantidade de participantes aderentes, aumentando risco de generalização indevida.
+  \item \textbf{Ausência de variáveis qualitativas}: percepções subjetivas (ex.: satisfação, dificuldades) não foram visualizadas, embora sejam relevantes para interpretar os resultados.
+\end{itemize}
+
+Além disso, identificamos as seguintes limitações do estudo:
+\begin{itemize}
+    \item Tamanho reduzido da amostra e perda de dados por falhas na coleta (15 participantes não identificados).
+    \item Baixa adesão: 75\% dos participantes relataram não ter assistido ou interagido com o conteúdo, o que compromete a validade das comparações.
+    \item Tempo insuficiente para interação: mais da metade dos alunos apontou falta de tempo como principal barreira, e cerca de 50--60\% sugeriram necessidade de mais tempo para engajamento.
+    \item Dificuldade em medir adesão de forma precisa, já que parte dos alunos acessou parcialmente o material.
+    \item Percepção limitada de aprendizagem: apenas 5\% relataram sensação de aprendizado efetivo, indicando que o formato pode não ter sido adequado para todos.
+    \item Limitações das visualizações: os gráficos não capturam variáveis qualitativas (como satisfação ou dificuldades relatadas), e as médias podem estar enviesadas pela baixa adesão.
+\end{itemize}
+
+Como expansão, recomenda-se:
+\begin{itemize}
+    \item Aumentar o tempo disponível para interação com os materiais.
+    \item Explorar formatos presenciais ou híbridos, considerando que parte dos alunos relatou dificuldade em absorver conteúdo online.
+    \item Incluir visualizações qualitativas (ex.: nuvem de palavras ou gráficos de barras com feedback dos participantes).
+    \item Replicar o estudo em maior escala, com coleta mais robusta e identificação completa dos participantes.
+\end{itemize}
+
+\end{document}

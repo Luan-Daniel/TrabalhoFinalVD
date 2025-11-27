@@ -29,10 +29,13 @@ __pycache__/
 *.stt
 *.xdy
 *.tdo
+*.fdb_latexmk
+*.fls
+*.synctex
 # Generated files
 *.dvi
 *.ps
-*.pdf
+#*.pdf
 # Editor and IDE files
 *.swp
 *~
@@ -46,3 +49,4 @@ __pycache__/
 *.sublime-project
 vscode/
 idea/
+data/

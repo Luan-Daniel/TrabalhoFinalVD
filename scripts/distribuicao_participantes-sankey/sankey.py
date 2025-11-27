@@ -81,4 +81,4 @@ fig.update_layout(title_text="Fluxo de Participantes no Estudo", font_size=12)
 
 output_file = "output/sankey_simplificado.html"
 fig.write_html(output_file)
-fig.write_image("doc/img/sankey_simplificado.png")
+fig.write_image("doc/img/sankey_simplificado.png", width=1200, height=900)
