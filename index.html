@@ -1,0 +1,86 @@
+
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Visualizações</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<style>
+			.viz-iframe { width: 100%; height: 600px; border: 0; }
+			.accordion-button { white-space: normal; }
+		</style>
+	</head>
+	<body class="p-3">
+		<div class="container">
+			<h1 class="mb-3">Visualizações de Pesquisa Sobre Dor (Fisioterapia)</h1>
+			<p class="small text-muted">WIP: As visualizações podem ser instáveis quando carregadas diretamente aqui. Tente abrir em uma guia separada.</p>
+
+			<div class="accordion" id="vizAccordion">
+
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingSankey">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSankey" aria-expanded="false" aria-controls="collapseSankey">Distribuição de participantes (Sankey)</button>
+					</h2>
+					<div id="collapseSankey" class="accordion-collapse collapse" aria-labelledby="headingSankey" data-bs-parent="#vizAccordion">
+						<div class="accordion-body">
+							<iframe class="viz-iframe" src="output/sankey_simplificado.html"></iframe>
+							<div class="mt-2"><a href="output/sankey_simplificado.html" target="_blank">Abrir em nova aba</a></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingQND">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQND" aria-expanded="false" aria-controls="collapseQND">QND - Distribuição de respostas (Radar)</button>
+					</h2>
+					<div id="collapseQND" class="accordion-collapse collapse" aria-labelledby="headingQND" data-bs-parent="#vizAccordion">
+						<div class="accordion-body">
+							<iframe class="viz-iframe" src="output/QND_distribuicao_respostas_radar.html"></iframe>
+							<div class="mt-2"><a href="output/QND_distribuicao_respostas_radar.html" target="_blank">Abrir em nova aba</a></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingQVC">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQVC" aria-expanded="false" aria-controls="collapseQVC">QVC - Distribuição de respostas (Radar)</button>
+					</h2>
+					<div id="collapseQVC" class="accordion-collapse collapse" aria-labelledby="headingQVC" data-bs-parent="#vizAccordion">
+						<div class="accordion-body">
+							<iframe class="viz-iframe" src="output/QVC_distribuicao_respostas_radar.html"></iframe>
+							<div class="mt-2"><a href="output/QVC_distribuicao_respostas_radar.html" target="_blank">Abrir em nova aba</a></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingAdesao">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdesao" aria-expanded="false" aria-controls="collapseAdesao">Adesão - Pontuação média (Barras)</button>
+					</h2>
+					<div id="collapseAdesao" class="accordion-collapse collapse" aria-labelledby="headingAdesao" data-bs-parent="#vizAccordion">
+						<div class="accordion-body">
+							<iframe class="viz-iframe" src="output/adesao_pontuacao_media.html"></iframe>
+							<div class="mt-2"><a href="output/adesao_pontuacao_media.html" target="_blank">Abrir em nova aba</a></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingGrupo">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGrupo" aria-expanded="false" aria-controls="collapseGrupo">Grupo - Pontuação média (Barras)</button>
+					</h2>
+					<div id="collapseGrupo" class="accordion-collapse collapse" aria-labelledby="headingGrupo" data-bs-parent="#vizAccordion">
+						<div class="accordion-body">
+							<iframe class="viz-iframe" src="output/grupo_pontuacao_media.html"></iframe>
+							<div class="mt-2"><a href="output/grupo_pontuacao_media.html" target="_blank">Abrir em nova aba</a></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
