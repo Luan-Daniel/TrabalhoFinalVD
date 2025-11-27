@@ -1,19 +1,17 @@
 
 # Visualização de Dados — Trabalho Final CIT7587 (20252)
 
-**Resumo**
-- **Descrição:** Projeto final da disciplina Visualização de Dados (CIT7587, 20252). Conjunto de scripts em Python que gera visualizações interativas (Plotly) a partir de dados de uma pesquisa sobre dor aplicada ao curso de Fisioterapia.
+Projeto final da disciplina Visualização de Dados (CIT7587, 20252). Conjunto de scripts em Python que gera visualizações interativas (Plotly) a partir de dados de uma pesquisa sobre dor aplicada ao curso de Fisioterapia.
 
 **Arquivos importantes**
 - **Dados:** `data\Dados e Estatisticas.xlsx` — contém os dados da pesquisa e as estatísticas aplicadas.
 - **Scripts:** `scripts\gerar_visualisacoes.py` — ponto de entrada que executa os scripts para gerar as visualizações.
-- **Visualizações geradas:** arquivos HTML em `output/` (ex.: `adesao_pontuacao_media.html`, `grupo_pontuacao_media.html`, `QND_distribuicao_respostas_radar.html`, `QVC_distribuicao_respostas_radar.html`, `sankey_simplificado.html`).
+- **Visualizações geradas:** arquivos HTML em `output/`.
 - **Página compilada:** `index.html` — página que compila e exibe todas as visualizações geradas.
 - **Relatório e imagens:** pasta `doc/` — contém `main.tex` e `doc/img/` com figuras usadas no relatório.
 
 **Como executar (Windows / PowerShell)**
-- **Requisitos:** Python 3.8+ (recomendado 3.11). As dependências estão listadas em `requirements.txt`.
-- **Passos rápidos:**
+**Requisitos:** Python 3.8+ (recomendado 3.11). As dependências estão listadas em `requirements.txt`.
 
 ```powershell
 # Criar e ativar ambiente virtual
@@ -27,9 +25,9 @@ pip install -r requirements.txt
 python .\scripts\gerar_visualisacoes.py
 ```
 
-- **Observações:**
-	- Você pode executar scripts individuais localizados em `scripts/` ou nos subdiretórios (por exemplo, `scripts\distribuicao_respostas-radar\QND-radar.py`).
-	- O script principal (`gerar_visualisacoes.py`) assume que o arquivo de dados está em `data\Dados e Estatisticas.xlsx`. Se usar outro caminho, edite o script conforme necessário.
+**Observações:**
+- Você pode executar scripts individuais localizados em `scripts/` ou nos subdiretórios (por exemplo, `scripts\distribuicao_respostas-radar\QND-radar.py`).
+- O script principal (`gerar_visualisacoes.py`) assume que o arquivo de dados está em `data\Dados e Estatisticas.xlsx`. Se usar outro caminho, edite o script conforme necessário.
 
 **Resultados do projeto**
 - **HTML interativos:** arquivos em `output/` — cada visualização é gerada como um HTML independente.
